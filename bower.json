@@ -15,7 +15,8 @@
   "main": "src/ngCompleter.js",
   "dependencies": {
     "jquery": "^1.11.1",
-    "angular": "1.4.7"
+    "angular": "1.4.7",
+    "ng-completer": "ngCompleter#^0.0.1"
   },
   "resolutions": {
     "angular": "1.4.7"
@@ -23,7 +24,11 @@
   "ignore": [
     "node_modules",
     "bower_components",
-    "tests"
+    "tests",
+    "./index.html",
+    "./gitignore",
+    "./gulpfile.js",
+    "./karma.conf.js"
   ],
   "license": "MIT",
   "homepage": "https://github.com/wangxingkang/ng-completer#readme",
@@ -33,5 +38,8 @@
   },
   "bugs": {
     "url": "https://github.com/wangxingkang/ng-completer/issues"
+  },
+  "devDependencies": {
+    "ng-completer": "ngCompleter#^0.0.1"
   }
 }
