@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>ngCompleter Demo</title>
+    <link rel="stylesheet" href="src/ngCompleter.css">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="src/ngCompleter.js"></script>
+    <script type="text/javascript">
+      angular
+        .module('app',['ngCompleter'])
+        .controller('IndexController', function ($scope) {
+            $scope.emailFormat = ['qq.com', '163.com', '126.com', 'live.com']
+        })
+    </script>
+</head>
+<body ng-controller="IndexController">
+    <input type="text" name="email" class="form-control"
+           ng-completer data-source="emailFormat" data-separator="@" data-z-index = "1000"
+           ng-model="email"
+           placeholder="请输入邮箱">
+</body>
+</html>
