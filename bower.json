@@ -20,6 +20,11 @@
   "resolutions": {
     "angular": "1.4.7"
   },
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/wangxingkang/ng-completer#readme",
   "repository": {
