@@ -4,63 +4,52 @@
 module.exports = function(config) {
   config.set({
 
-    // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
-
-    // frameworks to use
-    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
+    // 应用的测试框架
     frameworks: ['jasmine'],
 
-
-    // list of files / patterns to load in the browser
+    // 测试需要加载的js文件
     files: [
-      'node_modules/angular/angular.js',
-      'node_modules/angular-mocks/angular-mocks.js',
-      'src/ngTouchstart.js',
-      'tests/**/*.js',
+      'bower_components/jquery/dist/jquery.js',
+      'bower_components/angular/angular.js',
+      'src/ngCompleter.js',
       'tests/*.js'
     ],
 
+    // 需要执行的文件列表
+    exclude: [],
 
-    // list of files to exclude
-    exclude: [
+    //添加插件；
+    plugins:[
+      'karma-jasmine',
+      'karma-chrome-launcher'
     ],
-
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
     },
 
-
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['spec'],
 
-
-    // web server port
+    // 服务端口
     port: 9876,
 
-
-    // enable / disable colors in the output (reporters and logs)
     colors: true,
 
-
-    // level of logging
-    // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
+    // 日志级别
     logLevel: config.LOG_INFO,
 
-
-    // enable / disable watching file and executing tests whenever any file changes
+    // autoWatch为true,Karma将自动执行测试用例
     autoWatch: true,
-
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
-
+    browsers: ['Chrome'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
