@@ -15,8 +15,7 @@
   "main": "src/ngCompleter.js",
   "dependencies": {
     "jquery": "^1.11.1",
-    "angular": "1.4.7",
-    "ng-completer": "ngCompleter#^0.0.1"
+    "angular": "1.4.7"
   },
   "resolutions": {
     "angular": "1.4.7"
