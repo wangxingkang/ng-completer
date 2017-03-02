@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "description": "Angular自动补全指令",
   "author": {
-    "name": "阿康",
-    "email": "156148958@qq.com"
+    "name": "wang_xingkang",
+    "email": "wang_xingkang@qq.com"
   },
   "keywords": [
     "ngCompleter",
@@ -37,8 +37,5 @@
   },
   "bugs": {
     "url": "https://github.com/wangxingkang/ng-completer/issues"
-  },
-  "devDependencies": {
-    "ng-completer": "ngCompleter#^0.0.1"
   }
 }

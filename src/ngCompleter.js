@@ -1,9 +1,10 @@
-'use strict';
+(function () {
+  'use strict';
 
-angular.module('ngCompleter', [])
-  .directive('ngCompleter', function() {
-    return {
-      restrict: 'AE',
+  angular.module('ngCompleter', [])
+    .directive('ngCompleter', function() {
+      return {
+        restrict: 'AE',
         scope: {
           itemTag: '@',//选择项的标签
           source: '=',//提供源数据
@@ -280,5 +281,7 @@ angular.module('ngCompleter', [])
             return s.replace(/([\.\$\^\{\[\(\|\)\*\+\?\\])/g, '\\$1');
           }
         }
-    };
-});
+      };
+    });
+
+})()
